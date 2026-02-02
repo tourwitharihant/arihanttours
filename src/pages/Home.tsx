@@ -266,27 +266,47 @@ export default function LandingPage({ onNavigate }: LandingPageProps = {}) {
     pt-24 sm:pt-0
   "
       >
-        {/* Background Video - YouTube Embed */}
+        {/* Background Video - responsive YouTube Embeds */}
         <div className="absolute inset-0 bg-black overflow-hidden">
-          <iframe
-            className="
-      absolute
-      top-1/2 left-1/2
-      w-[400%]
-      h-[140%]
-      sm:w-[250%]
-      sm:h-[120%]
-      md:w-[150%]
-      md:h-[110%]
-      -translate-x-1/2
-      -translate-y-1/2
-      pointer-events-none
-    "
-            src="https://www.youtube.com/embed/G2CQNw60z5E?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=G2CQNw60z5E&playsinline=1"
-            title="Hero background"
-            frameBorder="0"
-            allow="autoplay; encrypted-media; picture-in-picture"
-          />
+          {/* Desktop / larger screens: show main YouTube video */}
+          <div className="hidden md:block absolute inset-0">
+            <iframe
+              className="
+                absolute
+                top-1/2 left-1/2
+                w-[150%]
+                h-[110%]
+                -translate-x-1/2
+                -translate-y-1/2
+                pointer-events-none
+              "
+              src="https://www.youtube.com/embed/NGv1B3dY584?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=NGv1B3dY584&playsinline=1"
+              title="Hero background - desktop"
+              frameBorder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+            />
+          </div>
+
+          {/* Mobile / small screens: show the Shorts video */}
+          <div className="block md:hidden absolute inset-0">
+            <iframe
+              className="
+                absolute
+                top-1/2 left-1/2
+                w-[400%]
+                h-[140%]
+                sm:w-[250%]
+                sm:h-[120%]
+                -translate-x-1/2
+                -translate-y-1/2
+                pointer-events-none
+              "
+              src="https://www.youtube.com/embed/qwU9Qp1vwK4?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="Hero background - mobile short"
+              frameBorder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+            />
+          </div>
         </div>
 
         {/* Dark Overlay */}
