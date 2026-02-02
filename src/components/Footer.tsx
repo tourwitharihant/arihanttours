@@ -172,7 +172,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               >
                 <span>Crafted with passion by</span>
                 <span className="font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-orange-400 group-hover:to-red-400 transition-all duration-300">
-                  Purple Minds Tech
+                  Purple Minds Tech / Shyamverse media
                 </span>
                 <ExternalLink className="h-3 w-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
               </a>
