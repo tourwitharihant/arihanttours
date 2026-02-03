@@ -89,7 +89,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   href="tel:+917987323660"
                   className="text-gray-400 text-sm hover:text-orange-500 transition-colors"
                 >
-                  +91 7987323660, +91 8602413045, +91 9131422832
+                  +91 7987323660, +91 8602413045
                 </a>
               </div>
 
